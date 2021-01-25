@@ -1,145 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-
-    <style>
-        body {
-          background-image: url('https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1947&q=80');
-          /* background-image: url('https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80'); */
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          
-          background-size: 100% 100%;
-        }
-
-        .ABOUT {
-            
-            background-color: rgb(227, 233, 233);    
-            text-align: left;
-            height: 425px;
-            object-fit: cover;
-        }
-
-        .SKILLS {
-            
-            background-color: rgb(227, 233, 233);    
-            text-align: left;
-            /* height: 425px; */
-            object-fit: cover;
-        }
-
-        .PROJECTS {
-            
-            background-color: rgb(227, 233, 233);    
-            text-align: left;
-            /* height: 425px; */
-            object-fit: cover;
-        }
-
-        .TESTIMONIALS {
-            
-            background-color: rgb(227, 233, 233);    
-            text-align: left;
-            /* height: 425px; */
-            object-fit: cover;
-        }
-
-        /* img {
-  width: 350;
-  height: 400;
-  object-fit: cover
-} */
-        
-    </style>
-
+  <meta charset="UTF-8">
+  <title>Selectors Exercise</title>
+  <link rel="stylesheet" type="text/css" href="selectors.css">
 </head>
-<body >
-    <h1>PORTFOLIO</h1>
-    <!-- Center Part using div tag -->
-    
-    <div class="ABOUT" >
-        <img src="image1.jpg" alt="image test" width="350" height="400" style="float: left; padding: 15px;">
-        <h2 style="font-family: 'Franklin Gothic Medium';">About Me</h2>
-        <p style="font-size: 160%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vero dolores adipisci totam, quaerat aperiam error veniam ipsa labore. Sequi consequuntur asperiores modi eveniet perspiciatis provident laudantium aliquam illum. Pariatur!</p>
-        <br>
-        
-        
-    </div>
+<body>
+  <h1>Selectors Exercise</h1>
 
-    <div class="SKILLS" >
-        <h2 style="font-family: 'Franklin Gothic Medium';" align="Center">SKILLS</h2>
-        <h3>Programming Languages</h3>
-        <ul>
-            <li>C/C++</li>
-            <li>JAVA</li>
-            <li>Python</li>
-        </ul>
+<p>PARAGRAPH NOT INSIDE A DIV</p>
 
-        <h3>Industry Knowledge</h3>
-        <ul>
-            <li>Web Development
-                <ol>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                </ol>
-            </li>
-            <li>Data Structures And Algorithms</li>
-            <li>Android Development</li>
-        </ul>
+<div>
+  <p class="hello">I am a paragraph with a class</p>
+  <p id="special">I am a paragraph with an ID</p>
 
-        <h3>Interpersonal Skills</h3>
-        <ul>
-            <li>English</li>
-            <li>Hindi</li>
-        </ul>
-    </div>
+  <h2>I am an awesome h2</h2>
+  
+  
+  <p>Roof party yr hella synth, Wes Anderson narwhal four dollar toast before they sold out retro lo-fi. Austin iPhone pop-up farm-to-table, PBR&B McSweeney's ennui messenger bag distillery before they sold out Portland wolf fanny pack YOLO. Locavore slow-carb trust fund farm-to-table. Pinterest gastropub lo-fi, McSweeney's trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, whatever 3 wolf moon XOXO normcore. Pug fanny pack 3 wolf moon, typewriter organic chia mustache scenester seitan shabby chic Blue Bottle salvia ugh iPhone. Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health goth asymmetrical freegan mixtape street art pour-over whatever.</p>
 
-    <div class="PROJECTS" style="text-align: left;">
-        <h2 style="font-family: 'Franklin Gothic Medium';" align="Center">Projects and Works</h2>
-        
-    </div>
-    
-    <div class="TESTIMONIALS" style="text-align: left;">
-        <h2 style="font-family: 'Franklin Gothic Medium';" align="Center">TESTIMONIALS</h2>
-        
-        <h3>Languages and Technologies</h3>
-        <table >
-            <tr>
-                <!-- <td>JAVA</td>
-                 -->
-                <td><img src="JAVA.png" width="300"></td>
-            <!-- </tr>
-            <tr>
-                <td>C</td>
-                 -->
-                <td><img src="c.png" width="300"></td>
-            <!-- </tr>
-            <tr>
-                <td>Python</td>
-                 -->
-                <td><img src="Python.png" width="300"></td>
-            </tr>
-        </table>
+</div>
 
-        
-    </div>
+<div>
+  <h2>Things I need to do</h2>
 
-    <div class="CONTACTS" style="text-align: left;">
+  <ul>
+    <li>Walk Dog <input type="checkbox" checked> </li>
+    <li>Feed Dog <input type="checkbox" checked> </li>
+    <li>Wash Dog <input type="checkbox"></li>
+  </ul>
+</div>
 
-        <h3>Contact Letter</h3>
+<div>
+  <h2>I am another awesome h2</h2>
+
+  <p>Cardigan Tumblr mlkshk, fap tilde 3 wolf moon Portland. Heirloom health goth taxidermy blog lo-fi selfies, post-ironic master cleanse fingerstache normcore. Kickstarter plaid twee, bespoke single-origin coffee sustainable lo-fi vinyl Pinterest pork belly <em>cronut skateboard</em> 3 wolf moon. Normcore single-origin coffee salvia, bespoke Austin swag Godard before they sold out kogi disrupt locavore. Lumbersexual Shoreditch Vice, artisan American Apparel master cleanse yr salvia vegan. Bespoke letterpress heirloom kale chips deep v four loko. Lomo sustainable put a bird on it trust fund post-ironic</p>
+
+  <p>I'm the second paragraph inside this div!</p>
+</div>
+
+<p>PARAGRAPH NOT INSIDE A DIV</p>
 
 
-        <address>
-            Email :<a href="mailto:souravmishra110@gmail.com">Sourav Mishra</a>.<br>
-            Phone :<a href="tel:123-456-7890">123-456-7890</a><br>
-            LinkedIn :<a href="https://www.linkedin.com/in/sourav-mishra-415654191/">Sourav Mishra</a><br>
-        </address>
-        
-    </div>
+<div>
+  <h2>A less awesome h2</h2>
+
+  <p>Roof party yr hella synth, Wes Anderson narwhal four dollar toast before they sold out retro lo-fi. Austin iPhone pop-up farm-to-table, PBR&B McSweeney's ennui messenger bag distillery before they sold out Portland wolf fanny pack YOLO. Locavore slow-carb trust fund farm-to-table. Pinterest gastropub lo-fi, McSweeney's trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, whatever 3 wolf moon XOXO normcore. Pug fanny pack 3 wolf moon, typewriter organic chia mustache scenester seitan shabby chic Blue Bottle salvia ugh iPhone. Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health goth asymmetrical freegan mixtape street art pour-over whatever</p>
+
+  <p>One last paragraph here!</p>
+
+  <a href="https://news.ycombinator.com/">I am a link to Hacker News</a>
+  <a href="https://www.devsprout.io">I am a link to DevSprout</a>
+  <br>
+
+  <input type="text" name="name" /><label> Name</label><br/>
+  <input type="password" name="password" /><label> Password</label><br/>
+
+</div>
+
+<p>PARAGRAPH NOT INSIDE A DIV</p>
 
 </body>
 </html>
